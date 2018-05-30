@@ -102,6 +102,7 @@ $color-background: #FFFFFF;
 		&__label {
 			position: absolute;
 			top: -1rem;
+			left: 0;
 			font-size: 1.2rem;
 			color: $color-text;
 			letter-spacing: 0.57px;
@@ -111,6 +112,7 @@ $color-background: #FFFFFF;
 			font-size: 1.2rem;
 			position: absolute;
 			top: 50%;
+			left: 0;
 			transform: translateY(-50%);
 			color: $color-text;
 		}
