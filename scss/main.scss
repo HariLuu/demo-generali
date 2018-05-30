@@ -1,0 +1,197 @@
+@import '_normalize';
+@import '_icons';
+
+// Normalize
+* {
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 10px; // 1rem = 10px
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+// Colors
+$color-text: #8D8C8C;
+$color-submit: #C5281C;
+$color-background: #FFFFFF;
+
+// Style
+.login {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 3rem 1.5rem;
+	overflow-y: scroll;
+
+	@media screen and (min-width: 375px) {
+		padding: 4rem 2rem;
+	}
+
+	&::after {
+		content: '';
+		background-image: url('/images/background.jpg');
+		background-position: center center;
+		background-size: cover;
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	&__wrapper {
+		padding: 4rem 2rem;
+		min-height: 100%;
+		background-color: $color-background;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@media screen and (min-width: 375px) {
+			padding: 6rem 3rem;
+		}
+	}
+
+	&__img {
+        max-width: 100%;
+    }
+
+    &__logo {
+        width: 6.5rem;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+    }
+
+    &__name {
+        width: 16rem;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+    }
+
+    &__desc {
+        font-size: 1.3rem;
+        text-align: center;
+        color: $color-text;
+		line-height: 1.2;
+		margin-top: 0;
+		margin-bottom: 3.5rem;
+		letter-spacing: 0.57px;
+    }
+
+    &__form {
+		margin-bottom: 3rem;
+	}
+
+	&__input-wrapper {
+		display: block;
+		position: relative;
+		margin-bottom: 2.5rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__label {
+			position: absolute;
+			top: -1rem;
+			font-size: 1.2rem;
+			color: $color-text;
+			letter-spacing: 0.57px;
+		}
+
+		&__icon {
+			font-size: 1.2rem;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			color: $color-text;
+		}
+
+		&__input {
+			border: none;
+			border-bottom: 1px solid $color-text;
+			width: 100%;
+			padding: 0.8rem 1rem;
+			padding-left: 2.5rem;
+			outline: none;
+			font-size: 1.4rem;
+
+			&:focus {
+				border-bottom: 2px solid $color-submit;
+
+				+ .login__input-wrapper__label {
+					color: $color-submit;
+				}
+			}
+		}
+	}
+
+	&__submit {
+		cursor: pointer;
+		width: 100%;
+		padding: 1.4rem;
+		color: $color-submit;
+		background-color: white;
+		box-shadow: 0 6px 7px 0 rgba(black, 0.2);
+		border: none;
+		font-size: 1.6rem;
+		line-height: 1;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 3rem;
+
+		&:hover {
+			color: white;
+			background-color: $color-submit;
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__footer {
+		text-align: center;
+
+		&__item {
+			text-decoration: underline;
+			font-size: 1.2rem;
+			color: $color-text;
+
+			&:last-child {
+				margin-left: 1rem;
+				padding-left: 1rem;
+				border-left: 1px solid $color-text;
+			}
+		}
+	}
+}
+
+// Desktop viewport
+@media screen and (min-width: 992px) {
+	.login {
+		padding: 0;
+
+		&__wrapper {
+			width: 37%;
+			padding: 7.5rem;
+		}
+
+		&__logo {
+			width: 30%;
+		}
+
+		&__name {
+			width: 55%;
+		}
+	}
+}

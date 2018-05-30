@@ -1,0 +1,24 @@
+{
+  "name": "generali",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss public/main.css",
+    "autoprefixer-css": "npx postcss public/main.css --use autoprefixer -o public/main.css --no-map",
+    "watch-css": "nodemon -e scss -x \"npm run build-css && npm run autoprefixer-css\"",
+    "icon-font": "icon-font-generator assets/icons/*.svg -o public/fonts --fontspath ../fonts --csspath scss/_icons.scss --csstp assets/templates/iconcss.hbs --htmltp assets/templates/iconhtml.hbs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^8.5.1",
+    "icon-font-generator": "^2.1.7",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
+    "postcss-cli": "^5.0.0"
+  }
+}
