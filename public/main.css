@@ -389,6 +389,7 @@ body {
     .login__input-wrapper__label {
       position: absolute;
       top: -1rem;
+      left: 0;
       font-size: 1.2rem;
       color: #8D8C8C;
       letter-spacing: 0.57px; }
@@ -396,6 +397,7 @@ body {
       font-size: 1.2rem;
       position: absolute;
       top: 50%;
+      left: 0;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
       color: #8D8C8C; }
