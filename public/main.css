@@ -374,7 +374,7 @@ body {
       .login__wrapper {
         padding: 6rem 3rem; } }
   .login__img {
-    max-width: 100%; }
+    width: 100%; }
   .login__logo {
     width: 6.5rem;
     margin: 0 auto;
