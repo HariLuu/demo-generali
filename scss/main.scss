@@ -36,7 +36,7 @@ $color-background: #FFFFFF;
 
 	&::after {
 		content: '';
-		background-image: url('/images/background.jpg');
+		background-image: url('./images/background.jpg');
 		background-position: center center;
 		background-size: cover;
 		position: fixed;
@@ -115,6 +115,10 @@ $color-background: #FFFFFF;
 			left: 0;
 			transform: translateY(-50%);
 			color: $color-text;
+
+			&--key {
+				font-size: 0.85rem;
+			}
 		}
 
 		&__input {
@@ -184,8 +188,8 @@ $color-background: #FFFFFF;
 		padding: 0;
 
 		&__wrapper {
-			width: 37%;
-			padding: 7.5rem;
+			width: 40%;
+			padding: 6.8rem;
 		}
 
 		&__logo {
@@ -193,7 +197,7 @@ $color-background: #FFFFFF;
 		}
 
 		&__name {
-			width: 55%;
+			width: 55%;			
 		}
 	}
 }

@@ -7,7 +7,7 @@
     "build-css": "node-sass --include-path scss scss/main.scss public/main.css",
     "autoprefixer-css": "npx postcss public/main.css --use autoprefixer -o public/main.css --no-map",
     "watch-css": "nodemon -e scss -x \"npm run build-css && npm run autoprefixer-css\"",
-    "icon-font": "icon-font-generator assets/icons/*.svg -o public/fonts --fontspath ../fonts --csspath scss/_icons.scss --csstp assets/templates/iconcss.hbs --htmltp assets/templates/iconhtml.hbs",
+    "icon-font": "icon-font-generator assets/icons/*.svg -o public/fonts --fontspath ./fonts --csspath scss/_icons.scss --csstp assets/templates/iconcss.hbs --htmltp assets/templates/iconhtml.hbs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

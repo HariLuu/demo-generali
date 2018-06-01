@@ -68,8 +68,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -300,7 +299,7 @@ template {
 
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons.eot?5a6a4574f72b2d7d45656fb51bb588b8?#iefix") format("embedded-opentype"), url("../fonts/icons.woff2?5a6a4574f72b2d7d45656fb51bb588b8") format("woff2"), url("../fonts/icons.woff?5a6a4574f72b2d7d45656fb51bb588b8") format("woff"), url("../fonts/icons.ttf?5a6a4574f72b2d7d45656fb51bb588b8") format("truetype"), url("../fonts/icons.svg?5a6a4574f72b2d7d45656fb51bb588b8#icons") format("svg"); }
+  src: url("./fonts/icons.eot?8359f8e5cf9e715e360d369caa7c914a?#iefix") format("embedded-opentype"), url("./fonts/icons.woff2?8359f8e5cf9e715e360d369caa7c914a") format("woff2"), url("./fonts/icons.woff?8359f8e5cf9e715e360d369caa7c914a") format("woff"), url("./fonts/icons.ttf?8359f8e5cf9e715e360d369caa7c914a") format("truetype"), url("./fonts/icons.svg?8359f8e5cf9e715e360d369caa7c914a#icons") format("svg"); }
 
 .icon {
   line-height: 1;
@@ -341,7 +340,7 @@ body {
       padding: 4rem 2rem; } }
   .login::after {
     content: '';
-    background-image: url("/images/background.jpg");
+    background-image: url("./images/background.jpg");
     background-position: center center;
     background-size: cover;
     position: fixed;
@@ -398,9 +397,10 @@ body {
       position: absolute;
       top: 50%;
       left: 0;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
+      transform: translateY(-50%);
       color: #8D8C8C; }
+      .login__input-wrapper__icon--key {
+        font-size: 0.85rem; }
     .login__input-wrapper__input {
       border: none;
       border-bottom: 1px solid #8D8C8C;
@@ -446,8 +446,8 @@ body {
   .login {
     padding: 0; }
     .login__wrapper {
-      width: 37%;
-      padding: 7.5rem; }
+      width: 40%;
+      padding: 6.8rem; }
     .login__logo {
       width: 30%; }
     .login__name {
